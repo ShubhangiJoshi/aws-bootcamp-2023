@@ -1,0 +1,37 @@
+{
+    "AlarmActions": [
+        "arn:aws:sns:ap-south-1:825740627904:billing-alert"
+    ],
+    "ComparisonOperator": "GreaterThanThreshold",
+    "EvaluationPeriods": 1,
+    "Threshold": 1,
+    "TreatMissingData": "breaching",
+    "AlarmDescription": "This alarm would be triggered if the daily estimated charges exceeds1$",
+    "AlarmName": "DailyEstimationCharges",
+    "Metrics": [
+        {
+            "MetricStat": {
+                "Metric": {
+                    "MetricName": "ConnectionsFailed",
+                    "Namespace": "AWS/Billing",
+                    "Dimensions": [{
+                        "Name": "Currency",
+                        "Value":"USD"
+
+                    }]
+                },
+                "Period": 86400,
+                "Stat": "Maximum"
+            },
+            "Id": "m1",
+            "ReturnData": "False"
+        },
+        
+        {
+            "Id": "e1",
+            "Expression": "If (Rate(m1)>0,Rate(m1)*86400,0)",
+            "ReturnData": "true",
+            "Label": "DailyEstimationCharges"
+        }
+    ]
+}
