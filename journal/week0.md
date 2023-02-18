@@ -25,9 +25,8 @@
 ###Errors faced ( planning to maintain error log )###
 1) Post IAM user created, used the link and though password was noted on scrap pad , faced troubled logged in. so removed IAM user and created new one.
 2)
-3)An error occurred (InvalidClientTokenId) when calling the GetCallerIdentity operation: The security token included in the request is invalid. -> Whenever I restart my work after break or there is a discontinued session, I get this error . The only solution I got is resetting 2 environment variables as 
-export AWS_ACCESS_KEY_ID='your access key id here';
-export AWS_SECRET_KEY='your secret key here'
+3) An error occurred (InvalidClientTokenId) when calling the GetCallerIdentity operation: The security token included in the request is invalid. -> Whenever I restart my work after break or there is a discontinued session, I get this error . The only solution I got is resetting 2 environment variables as export AWS_ACCESS_KEY_ID='your access key id here';
+    export AWS_SECRET_KEY='your secret key here'
 
 4) Unknown options: <Account id> -> Made mistake while typing budget.json. --account-id = $AWS_ACCOUNT_ID \ >> added '=' unintentionaly. 
 5) git opn install - As per AB's advice, was trying to see bash but , dint know how to stup running open command. so killed the terminal forcefully. finally understood ctrl+ c ( mac) would help me kill the task .
