@@ -21,7 +21,7 @@
 16)  GIT - Few details such as budget and biling alarm is committed to week 0 branch only
 17)  GIT - Environmental vaibales are stored through aws CLI
 18)  GIT - Sensitive data such as secret key is removed and committed again.
-19)  Lucid - Created Logical structure of crudder application
+19)  Lucid - Created Logical structure of crudder application ( link - https://lucid.app/lucidchart/16d0cf29-ee9e-492a-9997-14803d71f3f2/edit?viewport_loc=-165%2C-71%2C2565%2C1291%2C0_0&invitationId=inv_2462a695-4323-4570-bf0d-21e71437beba)
 
 
 ###Errors faced ( planning to maintain error log )###
